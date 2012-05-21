@@ -1,5 +1,5 @@
 --[[
-@title JimKanKlopfer
+@title JimKanCam
 @param s Seconds 1st shot
 @default s 30
 @param m Inteval minutes
