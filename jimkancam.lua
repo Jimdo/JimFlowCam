@@ -34,7 +34,4 @@ while true do
     seconds_to_next_shot = seconds_to_next_shot - 1
     sleep(1000)
   end
-  poke(0xC0220018,0x44)
-  sleep(1000)
-  poke(0xC0220018,0x46)
 end
