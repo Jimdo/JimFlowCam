@@ -4,10 +4,6 @@
 @default s 30
 @param m Inteval minutes
 @default m 30
-@param n mb min
-@default n 90
-@param x mb target
-@default x 90
 --]]
 require "disk"
 
@@ -25,7 +21,13 @@ end
 count = 1
 
 while true do
-  disk.deleteUntilMbFree(mb_min, mb_target)
+  local imageList = disk.filterImageFiles("IMG")
+  local fileCount = table.getn(imageList)
+  local i = 0
+  while i ~= fileCount do
+    i = i + 1
+    os.remove(imageList[i])
+  end
   shoot()
   seconds_to_next_shot = minutes_to_next_shot * 60
   count = count + 1
