@@ -1,12 +1,12 @@
 What is this about?
 
-JimKanCam is a script for the alternate canon camera firmware chdk to take photos in intevals. It also deletes old photos after a configured memory limit is reached.
+JimFlowCam is a script for the alternate canon camera firmware chdk to take photos in intevals. It also deletes old photos after a configured memory limit is reached.
 
 
 Install:
 - Install CHDK on your canon camera (http://chdk.wikia.com/wiki/CHDK)
 - Download lua libs(http://chdk.setepontos.com/index.php?topic=3291.0) and copy disk.lua to the lualibs dir (chdk/lualib)
-- Download jimkancam.lua and copy to script dir (chdk/scripts)
+- Download jimflowcam.lua and copy to script dir (chdk/scripts)
 - start script from camera and enjoy interval shooting with auto delete 
 
 
@@ -14,7 +14,4 @@ Parameters:
 
 Seconds 1st shot: seconds to go before 1st shot
 Inteval minutes: interval in minutes
-mb min: when 'mb min' (megabytes) is reached the camera delets photos until 'mb target' is reached 
-mb tarket: see mb min
-
 
