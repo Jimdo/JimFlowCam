@@ -1,6 +1,6 @@
 What is this about?
 
-JimFlowCam is a script for the alternate canon camera firmware chdk to take photos in intevals. It also deletes old photos after a configured memory limit is reached.
+JimFlowCam is a script for the alternate canon camera firmware chdk to take photos in intevals. It also deletes the last image taken.
 
 
 Install:
