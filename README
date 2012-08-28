@@ -1,13 +1,12 @@
 What is this about?
 
+JimFlowCam is part of the JimFlow application.
+
 JimFlowCam is a script for the alternate canon camera firmware chdk to take photos in intevals. It also deletes the last image taken.
 
 
 Install:
-- Install CHDK on your canon camera (http://chdk.wikia.com/wiki/CHDK)
-- Download lua libs(http://chdk.setepontos.com/index.php?topic=3291.0) and copy disk.lua to the lualibs dir (chdk/lualib)
-- Download jimflowcam.lua and copy to script dir (chdk/scripts)
-- start script from camera and enjoy interval shooting with auto delete 
+See http://jimflow.jimdo.com
 
 
 Parameters:
