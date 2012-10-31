@@ -1,16 +1,3 @@
-What is this about?
+JimFlowCam is a component of JimFlow
 
-JimFlowCam is part of the JimFlow application.
-
-JimFlowCam is a script for the alternate canon camera firmware chdk to take photos in intevals. It also deletes the last image taken.
-
-
-Install:
-See http://jimflow.jimdo.com
-
-
-Parameters:
-
-Seconds 1st shot: seconds to go before 1st shot
-Inteval minutes: interval in minutes
-
+see http://jimflow.jimdo.com for more informations
