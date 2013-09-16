@@ -16,11 +16,12 @@ You should have received a copy of the GNU General Public License along with thi
 --]]
 require "disk"
 
+
+-- variables set by gui
 sleep_seconds_before_first_shot = s
 minutes_to_next_shot = m
-mb_min = n
-mb_target = x
 
+-- first shot
 while (0 < sleep_seconds_before_first_shot) do
   print("seconds to 1st shot "..sleep_seconds_before_first_shot)
   sleep_seconds_before_first_shot = sleep_seconds_before_first_shot - 1
@@ -29,7 +30,10 @@ end
 
 count = 1
 
+-- continous shooting until aborted
 while true do
+
+  -- get images from cam and delete all to save space
   local imageList = disk.filterImageFiles("IMG")
   local fileCount = table.getn(imageList)
   local i = 0
@@ -37,7 +41,11 @@ while true do
     i = i + 1
     os.remove(imageList[i])
   end
+
+  -- shot the image
   shoot()
+
+  -- delay for next shot with display on cam 
   seconds_to_next_shot = minutes_to_next_shot * 60
   count = count + 1
   while (0 < seconds_to_next_shot) do
@@ -46,6 +54,7 @@ while true do
     sleep(1000)
   end
 
+  -- turn off and on the sd card to reset if there was a failure on the wlan connection
   if (count % 10 == 0) then
     poke(0xC0220018,0x44)
     sleep(1000)	
